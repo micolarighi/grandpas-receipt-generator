@@ -20,9 +20,9 @@
 	for (let index = 0; index < addedItems.length; index++) {
 		total += addedItems[index][3];
 	}
-</script>
+</script>	
 
-<div class="flex items-center print:mt-[-55vh] w-screen flex-col mt-8">
+<div class="flex items-center flex-col print:m-0 mt-8">
 	<div id="receipt-container" class="outline p-[0.10in] m-0">
 		<div class="grid grid-cols-12">
 			<div class="col-span-1">

@@ -67,6 +67,7 @@
 		if (print.detail) {
 			showReceipt = !showReceipt;
 			window.print();
+			window.print();
 			receiptId = parseInt(receiptId) + 1;
 			localStorage.setItem('receiptId', receiptId);
 		} else {

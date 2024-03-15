@@ -3,7 +3,7 @@
     import { SvelteToast } from '@zerodevx/svelte-toast'
 </script>
 
-<div class="flex flex-col justify-center h-[90vh] items-center">
+<div class="flex flex-col print:block justify-center h-[90vh] items-center">
     <slot/>
 </div>
 
