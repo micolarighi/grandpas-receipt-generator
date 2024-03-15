@@ -30,10 +30,9 @@
 			</div>
 			<div class="col-span-7 text-[10px] pl-1">
 				<h1 class="text-[16px]">JAYA MA'MUR</h1>
-				<h1>JL. Otista 2 No. 67A Lantai 3</h1>
-				<h1>Telp.8190885 - Jakarta Timur</h1>
-				<h1>graphicrepro5jm@gmail.com</h1>
-				<h1 class="text-[18px] mt-3">Nota No.{pad(receiptId, 6)}</h1>
+				<h1 class="text-[12px]">JL. Otista 2 No. 67A Lantai 3 - Jakarta Timur</h1>
+				<h1 class="text-[11px]">graphicrepro5jm@gmail.com</h1>
+				<h1 class="text-[16px]">Telp.8190885</h1>
 			</div>
 			<div class="text-[16px] pl-2 col-span-4">
 				{dayDate}/{monthDate + 1}/{yearDate}
@@ -41,6 +40,7 @@
 				<p class="text-[18px] mt-2">{towards}</p>
 			</div>
 		</div>
+				<h1 class="text-[18px] mx-1 mt-3 border border-black p-1 text-center">Nota No.{pad(receiptId, 6)}</h1>
 		<div class="mt-4">
 			<table>
 				<thead>
