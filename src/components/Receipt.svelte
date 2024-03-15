@@ -23,7 +23,7 @@
 </script>
 
 <div class="flex justify-center items-center w-screen flex-col mt-8">
-	<div id="receipt-container" class="outline p-[0.10in]">
+	<div id="receipt-container" class="outline p-[0.10in] m-0">
 		<div class="grid grid-cols-12">
 			<div class="col-span-1">
 				<img src={Logo} alt="Logo" width="40px" class="mt-2" />
@@ -33,12 +33,12 @@
 				<h1>JL. Otista 2 No. 67A Lantai 3</h1>
 				<h1>Telp.8190885 - Jakarta Timur</h1>
 				<h1>graphicrepro5jm@gmail.com</h1>
-				<h1 class="text-[14px] mt-3">Nota No.{pad(receiptId, 8)}</h1>
+				<h1 class="text-[18px] mt-3">Nota No.{pad(receiptId, 6)}</h1>
 			</div>
 			<div class="text-[14px] pl-2 col-span-4">
 				{dayDate}/{monthDate + 1}/{yearDate}
-				<h1 class="text-[10px] mt-3">Kepada:</h1>
-				<p class="text-[13px] mt-2">{towards}</p>
+				<h1 class="text-[14px] mt-3">Kepada:</h1>
+				<p class="text-[18px] mt-2">{towards}</p>
 			</div>
 		</div>
 		<div class="mt-4">
@@ -95,13 +95,14 @@
 	#receipt-container {
 		min-width: 70mm;
 		max-width: 70mm;
-		min-height: 70mm;
 		font-family: header;
 		font-weight: 600;
 	}
 	@media print {
 		@page {
-			margin: 0;
+			margin: 0 !important;
+			padding: 0 !important;
+			height: max-content;
 		}
 	}
 	table {

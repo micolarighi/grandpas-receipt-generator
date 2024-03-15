@@ -10,7 +10,7 @@
         return num;
     }
     function handleChange() {
-        dispatch('change', [towards, pad(receiptId, 8)])
+        dispatch('change', [towards, pad(receiptId, 6)])
     }    
 </script>
 <div class="mb-3">
