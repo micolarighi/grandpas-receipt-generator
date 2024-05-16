@@ -19,7 +19,8 @@
 		{ name: 'Plat Oliver 72 (605 x 724)', price: 55000 },
 		{ name: 'Plat SM 72 ( 615 x 724)', price: 56000 },
 		{ name: 'Film pos-neg(A4)', price: 32000 },
-		{ name: 'Film pos-net(/cm)', price: 50 }
+		{ name: 'Film pos-net(/cm)', price: 50 },
+		{name : 'Film pos-net(custom)', price: 1000},
 	];
 	let currentSelectedItem = 0;
 	let quantity = 1;
@@ -38,9 +39,26 @@
 		quantity = qtt.detail;
 	}
 	function handleClick() {
-		addedItems = [
+
+		if (currentSelectedItem == 10) {
+			let customPrice = prompt("Masukkan Harga Custom (Akan dikali 1000) : ")
+			if (customPrice.length < 1) {
+				alert("Masukkan Harga Custom!")
+			} else {
+			addedItems = [
 			...addedItems,
-			[
+			[	
+				itemList[10].name,
+				itemList[10].price = parseFloat(customPrice) * 1000,
+				quantity,
+				parseInt(itemList[10].price) * quantity
+			]
+		];}
+		toast.push('Barang berhasil ditambah!');
+		} else {
+			addedItems = [
+			...addedItems,
+			[	
 				itemList[currentSelectedItem].name,
 				itemList[currentSelectedItem].price,
 				quantity,
@@ -48,6 +66,7 @@
 			]
 		];
 		toast.push('Barang berhasil ditambah!');
+		}
 	}
 	function handleShowReceipt() {
 		if (addedItems.length >= 1 && receiptId != null && receiptId > 0) {
