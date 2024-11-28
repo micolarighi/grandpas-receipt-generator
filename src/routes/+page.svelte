@@ -15,7 +15,7 @@
 		{ name: 'Plat SM (459 x 574)', price: 24000 },
 		{ name: 'Plat Oliver 58 (508 x 570)', price: 35000 },
 		{ name: 'Plat MO (550 x 650)', price: 42000 },
-		{ name: 'Plat Komori (560 x 670)', price: 45000 },
+		{ name: 'Plat Komori (560 x 670)', price: 48000 },
 		{ name: 'Plat Oliver 72 (605 x 724)', price: 55000 },
 		{ name: 'Plat SM 72 ( 615 x 724)', price: 56000 },
 		{ name: 'Film pos-neg(A4)', price: 32000 },
