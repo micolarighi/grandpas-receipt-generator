@@ -10,16 +10,16 @@
 	import { onMount } from 'svelte';
 	import { toast } from '@zerodevx/svelte-toast';
 	let itemList = [
-		{ name: 'Plat TOKO (254 x 394)', price: 12000 },
+		{ name: 'Plat TOKO (254 x 394)', price: 13000 },
 		{ name: 'Plat GTO (400 x 510)', price: 24000 },
-		{ name: 'Plat SM (459 x 574)', price: 24000 },
+		{ name: 'Plat SM (459 x 574)', price: 26000 },
 		{ name: 'Plat Oliver 58 (508 x 570)', price: 38000 },
-		{ name: 'Plat MO (550 x 650)', price: 42000 },
+		{ name: 'Plat MO (550 x 650)', price: 46000 },
 		{ name: 'Plat Komori (560 x 670)', price: 52000 },
-		{ name: 'Plat Oliver 72 (605 x 724)', price: 55000 },
+		{ name: 'Plat Oliver 72 (605 x 724)', price: 59000 },
 		{ name: 'Plat SM 72 ( 615 x 724)', price: 60000 },
-		{ name: 'Film pos-neg(A4)', price: 40000 },
-		{ name: 'Film pos-net(/cm)', price: 60 },
+		{ name: 'Film pos-neg(A4)', price: 45000 },
+		{ name: 'Film pos-net(/cm)', price: 65 },
 		{ name: 'Film pos-net(custom)', price: 1000 }
 	];
 	let currentSelectedItem = 0;
